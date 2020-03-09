@@ -5,4 +5,9 @@ Repository for basics of statistics
 
     https://youtu.be/Hdbbx7DIweQ
     
+* Power and Type 2 error
+
+    https://www.khanacademy.org/math/ap-statistics/tests-significance-ap
+    
+    
     
