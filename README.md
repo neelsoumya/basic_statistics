@@ -15,6 +15,12 @@ Repository for basics of statistics
     https://www.youtube.com/watch?v=S268k-DWRrE
     
     
+* Meta-analysis
+
+    * metafor package in R
+    
+    * https://www.youtube.com/watch?v=E7-EI13FGKc&list=PLfxmV3OxkxCvyh9a9eVU33nbjM9YV8AkV&index=10
+    
 * Power calculation    
 
     https://www.khanacademy.org/math/ap-statistics/tests-significance-ap
