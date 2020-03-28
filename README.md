@@ -21,6 +21,11 @@ Repository for basics of statistics
     
     * https://www.youtube.com/watch?v=E7-EI13FGKc&list=PLfxmV3OxkxCvyh9a9eVU33nbjM9YV8AkV&index=10
     
+    * very good tutorial
+    
+        * https://www.youtube.com/watch?v=O6qDlov5-Is
+        
+    
 * Power calculation    
 
     https://www.khanacademy.org/math/ap-statistics/tests-significance-ap
