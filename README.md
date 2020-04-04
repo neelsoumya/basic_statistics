@@ -33,3 +33,8 @@ Repository for basics of statistics
     power.t.test(n = NULL, power = .95, sd = 5, alternative = "two.sided", sig.level = 0.001, delta = 0.1)
     
     
+* GWAS
+
+    * https://www.ebi.ac.uk/training/online/course/gwas-catalog-exploring-snp-trait-associations-2019/what-gwas-catalog/what-are-genome-wide
+    
+    
