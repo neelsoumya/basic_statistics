@@ -38,3 +38,6 @@ Repository for basics of statistics
     * https://www.ebi.ac.uk/training/online/course/gwas-catalog-exploring-snp-trait-associations-2019/what-gwas-catalog/what-are-genome-wide
     
     
+* Main resource page
+
+    * https://sites.google.com/site/neelsoumya/research-resources/basic-statistics
