@@ -36,7 +36,12 @@ Repository for basics of statistics
 * GWAS
 
     * https://www.ebi.ac.uk/training/online/course/gwas-catalog-exploring-snp-trait-associations-2019/what-gwas-catalog/what-are-genome-wide
-    
+  
+  
+* Linear models and interaction effects (by ISLR authors Rob Tibshirani and Efron)
+
+    * https://www.youtube.com/watch?v=IFzVxLv0TKQ&list=PL5-da3qGB5IBSSCPANhTgrw82ws7w_or9&index=5
+
     
 * Main resource page
 
