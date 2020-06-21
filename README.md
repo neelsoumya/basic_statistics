@@ -42,6 +42,11 @@ Repository for basics of statistics
 
     * https://www.youtube.com/watch?v=IFzVxLv0TKQ&list=PL5-da3qGB5IBSSCPANhTgrw82ws7w_or9&index=5
 
+* Bias variance tradeoff
+
+    * https://www.youtube.com/watch?v=VaN1RUDuioQ&list=PLOg0ngHtcqbPTlZzRHA2ocQZqB1D_qZ5V&index=5
+    
+    * http://scott.fortmann-roe.com/docs/BiasVariance.html
     
 * Main resource page
 
