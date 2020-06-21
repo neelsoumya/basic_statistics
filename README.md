@@ -1,7 +1,7 @@
 # basic_statistics
 Repository for basics of statistics
 
-* Type 1 and Type 2 errors
+* Type 1 and Type 2 errors and p value
 
     https://youtu.be/Hdbbx7DIweQ
     
@@ -9,6 +9,9 @@ Repository for basics of statistics
 
     https://www.khanacademy.org/math/ap-statistics/tests-significance-ap
     
+* p value
+
+    https://www.youtube.com/watch?v=yzQHONabWhs&list=PLOg0ngHtcqbPTlZzRHA2ocQZqB1D_qZ5V&index=10
     
 * q-value
 
