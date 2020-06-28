@@ -38,6 +38,28 @@ Repository for basics of statistics
     
     
     
+* Confidence intervals
+
+   * How many standard deviations from the mean must you go to capture 95% of the scores
+
+   * Computing 95% confidence intervals Mean +/-   1.96 * std/sqrt(no of samples)
+
+         ci_alpha <- 0.05
+         qnorm(ci_alpha / 2)
+         qnorm(1 - (ci_alpha/2))
+         
+   * meaning of confidence intervals
+
+      * SUMMARY: if you repeat the experiment 100 times, 95 times the true value of the mean will fall within this interval.
+            This does not mean than with 95% probability, the mean will fall in this interval
+
+   * another explanation of confidence intervals by ISLR people (Rob Tibshirani)
+    
+      * https://www.youtube.com/watch?v=7TgVO_K75EY&list=PLOg0ngHtcqbPTlZzRHA2ocQZqB1D_qZ5V&index=8
+      
+      * https://www.coursera.org/learn/epidemiology/lecture/hzpDZ/confidence-intervals
+    
+    
 * More advanced topics
 
     
