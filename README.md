@@ -1,5 +1,5 @@
 # basic_statistics
-Repository for basics of statistics
+Repository for teaching basics of statistics
 
 * Type 1 and Type 2 errors and p value
 
