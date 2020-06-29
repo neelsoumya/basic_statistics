@@ -13,7 +13,7 @@ Repository for teaching basics of statistics
 
     * https://www.youtube.com/watch?v=yzQHONabWhs&list=PLOg0ngHtcqbPTlZzRHA2ocQZqB1D_qZ5V&index=10
     
-* q-value
+* q value
 
     * https://www.youtube.com/watch?v=S268k-DWRrE
     
