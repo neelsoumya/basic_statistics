@@ -25,9 +25,6 @@ Repository for basics of statistics
     * power.t.test(n = NULL, power = .95, sd = 5, alternative = "two.sided", sig.level = 0.001, delta = 0.1)
     
   
-* Linear models and interaction effects (by ISLR authors Rob Tibshirani and Efron)
-
-    * https://www.youtube.com/watch?v=IFzVxLv0TKQ&list=PL5-da3qGB5IBSSCPANhTgrw82ws7w_or9&index=5
 
 * Bias variance tradeoff
 
@@ -58,7 +55,12 @@ Repository for basics of statistics
       
       * https://www.coursera.org/learn/epidemiology/lecture/hzpDZ/confidence-intervals
     
-    
+
+* Linear models and interaction effects (by ISLR authors Rob Tibshirani and Efron)
+
+    * https://www.youtube.com/watch?v=IFzVxLv0TKQ&list=PL5-da3qGB5IBSSCPANhTgrw82ws7w_or9&index=5
+
+
 * More advanced topics
 
     
