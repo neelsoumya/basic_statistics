@@ -59,6 +59,13 @@ Repository for teaching basics of statistics
 * Linear models and interaction effects (by ISLR authors Rob Tibshirani and Efron)
 
     * https://www.youtube.com/watch?v=IFzVxLv0TKQ&list=PL5-da3qGB5IBSSCPANhTgrw82ws7w_or9&index=5
+    
+ 
+* Precision and recall
+
+   * https://en.wikipedia.org/wiki/Precision_and_recall
+   
+   * https://developers.google.com/machine-learning/crash-course/classification/precision-and-recall
 
 
 * More advanced topics
