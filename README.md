@@ -66,6 +66,10 @@ Repository for teaching basics of statistics
    * https://en.wikipedia.org/wiki/Precision_and_recall
    
    * https://developers.google.com/machine-learning/crash-course/classification/precision-and-recall
+   
+   * VERY GOOD picture of precision, recall, confusion matrix, false positive, true positive, etc
+   
+      * https://bitbucket.org/neelsoumya/meta_analysis_r_metafor/src/master/resources/Screen%20Shot%202020-07-16%20at%2011.12.44%20AM.png
 
 
 * More advanced topics
