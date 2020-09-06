@@ -94,6 +94,8 @@ Repository for teaching basics of statistics
    * GWAS
 
        * https://www.ebi.ac.uk/training/online/course/gwas-catalog-exploring-snp-trait-associations-2019/what-gwas-catalog/what-are-genome-wide
+       
+       * https://www.coursera.org/lecture/disease-genes/introduction-to-genome-wide-association-studies-historical-overview-iFQ1J
   
     
     
