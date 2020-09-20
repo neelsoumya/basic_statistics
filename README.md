@@ -1,5 +1,8 @@
 # basic_statistics
-Repository for teaching basics of statistics
+
+Repository for teaching basics of statistics. 
+This is intended for use in a data science class.
+
 
 * Type 1 and Type 2 errors and p value
 
@@ -38,7 +41,7 @@ Repository for teaching basics of statistics
 
    * How many standard deviations from the mean must you go to capture 95% of the scores
 
-   * Computing 95% confidence intervals Mean +/-   1.96 * std/sqrt(no of samples)
+   * Computing 95% confidence intervals Mean +/- 1.96 * std/sqrt(no of samples)
 
          ci_alpha <- 0.05
          qnorm(ci_alpha / 2)
