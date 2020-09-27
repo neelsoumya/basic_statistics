@@ -20,6 +20,8 @@ This is intended for use in an introductory data science class and for working p
 
     * https://www.youtube.com/watch?v=S268k-DWRrE
     
+    * https://www.youtube.com/watch?v=K8LQSvtjcEo
+    
     
 * Power calculation    
 
