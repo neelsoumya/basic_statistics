@@ -14,7 +14,10 @@ This is intended for use in an introductory data science class and for working p
     
 * p value
 
+    * https://www.youtube.com/watch?v=5Z9OIYA8He8
+    
     * https://www.youtube.com/watch?v=yzQHONabWhs&list=PLOg0ngHtcqbPTlZzRHA2ocQZqB1D_qZ5V&index=10
+    
     
 * q value and false discovery rate
 
