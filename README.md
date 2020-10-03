@@ -52,6 +52,16 @@ This is intended for use in an introductory data science class and for working p
          qnorm(ci_alpha / 2)
          qnorm(1 - (ci_alpha/2))
          
+         boostrapped confidence intervals using confint(x, method = 'boot')
+         
+         d <- data.frame(w=rnorm(100),
+                                x=rnorm(100),
+                                y=sample(LETTERS[1:2], 100, replace=TRUE),
+                                z=sample(LETTERS[3:4], 100, replace=TRUE) )
+         do GLM on this new data frame
+         fm2  <- glm(y ~ w + x + z, data=d, family=binomial)
+         confint(object = fm2, method = 'boot')
+         
    * meaning of confidence intervals
 
       * SUMMARY: if you repeat the experiment 100 times, 95 times the true value of the mean will fall within this interval.
