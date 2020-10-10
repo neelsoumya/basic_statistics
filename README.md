@@ -1,7 +1,7 @@
 # basic_statistics
 
-Repository for teaching basics of statistics. 
-This is intended for use in an introductory data science class and for working professionals who want to learn the basics of data science.
+This is a repository for teaching basics of statistics. 
+It is intended for use in an introductory data science class and/or for working professionals who want to learn the basics of data science.
 
 
 * Type 1 and Type 2 errors and p value
