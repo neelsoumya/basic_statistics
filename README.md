@@ -27,8 +27,6 @@ It is intended for use in an introductory data science class and/or for working 
     
     
 * Power calculation    
-
-    * https://www.khanacademy.org/math/ap-statistics/tests-significance-ap
     
     * https://youtu.be/6_Cuz0QqRWc
     
