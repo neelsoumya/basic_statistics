@@ -95,6 +95,12 @@ It is intended for use in an introductory data science class and/or for working 
 
    * END
 
+* 
+
+* 
+
+* 
+
 * More advanced topics
 
     
