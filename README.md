@@ -92,9 +92,3 @@ It is intended for use in an introductory data science class and/or for working 
 
 
 
-* END
-
-    
-* Main resource page
-
-    * https://sites.google.com/site/neelsoumya/research-resources/basic-statistics
