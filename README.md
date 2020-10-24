@@ -91,37 +91,9 @@ It is intended for use in an introductory data science class and/or for working 
     * https://www.youtube.com/watch?v=IFzVxLv0TKQ&list=PL5-da3qGB5IBSSCPANhTgrw82ws7w_or9&index=5
 
 
-* End of basic topics
 
-   * END
+* END
 
-* 
-
-* 
-
-* 
-
-* More advanced topics
-
-    
-   * Meta-analysis
-
-       * metafor package in R
-    
-       * https://www.youtube.com/watch?v=E7-EI13FGKc&list=PLfxmV3OxkxCvyh9a9eVU33nbjM9YV8AkV&index=10
-    
-       * very good tutorial
-    
-          * https://www.youtube.com/watch?v=O6qDlov5-Is
-        
-    
-   * GWAS
-
-       * https://www.ebi.ac.uk/training/online/course/gwas-catalog-exploring-snp-trait-associations-2019/what-gwas-catalog/what-are-genome-wide
-       
-       * https://www.coursera.org/lecture/disease-genes/introduction-to-genome-wide-association-studies-historical-overview-iFQ1J
-  
-    
     
 * Main resource page
 
