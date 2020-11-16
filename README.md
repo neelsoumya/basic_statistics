@@ -1,6 +1,6 @@
 # basic_statistics
 
-This is a repository for teaching basics of statistics. 
+This is a repository for teaching basics of statistics for data science. 
 It is intended for use in an introductory data science class and/or for working professionals who want to learn the basics of data science.
 
 
