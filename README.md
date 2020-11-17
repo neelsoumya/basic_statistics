@@ -86,6 +86,7 @@ It is intended for use in an introductory data science class and/or for working 
       * https://bitbucket.org/neelsoumya/meta_analysis_r_metafor/src/master/resources/Screen%20Shot%202020-07-16%20at%2011.12.44%20AM.png
 
 
+
 * Linear models and interaction effects (by ISLR authors Rob Tibshirani and Efron)
 
     * https://www.youtube.com/watch?v=IFzVxLv0TKQ&list=PL5-da3qGB5IBSSCPANhTgrw82ws7w_or9&index=5
