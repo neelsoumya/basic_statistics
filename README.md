@@ -91,6 +91,9 @@ It is intended for use in an introductory data science class and/or for working 
 
     * https://www.youtube.com/watch?v=IFzVxLv0TKQ&list=PL5-da3qGB5IBSSCPANhTgrw82ws7w_or9&index=5
 
+    * Woes of interpreting regression coefficients
+    
+         * https://youtu.be/yzQHONabWhs?t=498
 
 
 
