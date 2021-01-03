@@ -1,4 +1,4 @@
-* More advanced topics
+* More advanced statistical topics
 
     
    * Meta-analysis
