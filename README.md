@@ -25,6 +25,8 @@ It is intended for use in an introductory data science class and/or for working 
     
     * https://www.youtube.com/watch?v=K8LQSvtjcEo
     
+    * CONCEPT: look at distribution of p-values. q-value tells us the expected fraction of false positives in the significant tests below this threshold.
+    
     
 * Power calculation    
     
