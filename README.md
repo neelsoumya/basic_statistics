@@ -42,6 +42,10 @@ It is intended for use in an introductory data science class and/or for working 
     
     * http://scott.fortmann-roe.com/docs/BiasVariance.html
     
+    * VERY GOOD picture
+    
+        * https://github.com/neelsoumya/basic_statistics/blob/master/bias_variance.png
+    
     
     
 * Confidence intervals
