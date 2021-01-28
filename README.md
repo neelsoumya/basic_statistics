@@ -92,6 +92,8 @@ It is intended for use in an introductory data science class and/or for working 
       * https://bitbucket.org/neelsoumya/meta_analysis_r_metafor/src/master/resources/Screen%20Shot%202020-07-16%20at%2011.12.44%20AM.png
       
       * https://github.com/neelsoumya/basic_statistics/blob/master/Screen%20Shot%202020-07-16%20at%2011.12.44%20AM.png
+      
+      * https://github.com/neelsoumya/basic_statistics/blob/master/800px-Sensitivity_and_specificity.svg.png
 
 
 
