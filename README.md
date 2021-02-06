@@ -45,6 +45,10 @@ It is intended for use in an introductory data science class and/or for working 
     * VERY GOOD picture
     
         * https://github.com/neelsoumya/basic_statistics/blob/master/bias_variance.png
+        
+    * My lecture on the bias variance tradeoff
+    
+        * https://www.youtube.com/watch?v=4_la9-Ehvmo 
     
     
     
