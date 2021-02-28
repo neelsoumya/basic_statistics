@@ -58,7 +58,7 @@ It is intended for use in an introductory data science class. These materials ca
 
    * Computing 95% confidence intervals Mean +/- 1.96 * std/sqrt(no of samples)
 
-         ```R
+         
          ci_alpha <- 0.05
          qnorm(ci_alpha / 2)
          qnorm(1 - (ci_alpha/2))
@@ -72,7 +72,7 @@ It is intended for use in an introductory data science class. These materials ca
          do GLM on this new data frame
          fm2  <- glm(y ~ w + x + z, data=d, family=binomial)
          confint(object = fm2, method = 'boot')
-         ```
+         
          
    * meaning of confidence intervals
 
