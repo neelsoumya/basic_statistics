@@ -112,4 +112,11 @@ It is intended for use in an introductory data science class. These materials ca
          * https://youtu.be/yzQHONabWhs?t=498
 
 
+* Cross validation
+
+   * https://github.com/neelsoumya/basic_statistics/blob/master/Capture_crossvalidation.PNG
+
+   * https://github.com/neelsoumya/basic_statistics/blob/master/Capture_crossvalidation_split.PNG
+
+
 
