@@ -50,6 +50,13 @@ This is a repository for teaching the basics of statistics for data science and 
         * https://www.youtube.com/watch?v=4_la9-Ehvmo 
     
     
+* Cross validation
+
+   * https://github.com/neelsoumya/basic_statistics/blob/master/Capture_crossvalidation.PNG
+
+   * https://github.com/neelsoumya/basic_statistics/blob/master/Capture_crossvalidation_split.PNG
+   
+   
     
 * Confidence intervals
 
@@ -111,11 +118,7 @@ This is a repository for teaching the basics of statistics for data science and 
          * https://youtu.be/yzQHONabWhs?t=498
 
 
-* Cross validation
 
-   * https://github.com/neelsoumya/basic_statistics/blob/master/Capture_crossvalidation.PNG
-
-   * https://github.com/neelsoumya/basic_statistics/blob/master/Capture_crossvalidation_split.PNG
 
 
 
