@@ -58,6 +58,7 @@ This is a repository for teaching the basics of statistics for data science and 
    
    
     
+    
 * Confidence intervals
 
    * How many standard deviations from the mean must you go to capture 95% of the scores
