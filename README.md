@@ -1,6 +1,6 @@
 # basic_statistics
 
-This is a repository for teaching the basics of statistics for data science and machine learning. It is intended for use in an introductory data science class. These materials can also be used by working professionals who want to learn the basics of data science, statistics and machine learning.
+This is a repository for teaching the basics of statistics for data science and machine learning. It is intended for use in an introductory data science class. These materials can also be used by working professionals in industry who want to learn the basics of data science, statistics and machine learning.
 
 
 * Type 1 and Type 2 errors and p value
