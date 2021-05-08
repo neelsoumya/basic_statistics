@@ -104,7 +104,6 @@ This material can also be used by working professionals who want to learn the ba
    
    * VERY GOOD picture of precision, recall, confusion matrix, false positive, true positive, sensitivity, specificity 
    
-      * https://bitbucket.org/neelsoumya/meta_analysis_r_metafor/src/master/resources/Screen%20Shot%202020-07-16%20at%2011.12.44%20AM.png
       
       * https://github.com/neelsoumya/basic_statistics/blob/master/Screen%20Shot%202020-07-16%20at%2011.12.44%20AM.png
       
