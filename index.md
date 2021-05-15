@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## Introduction
 
 This is a repository for teaching the basics of statistics for data science and machine learning. It is intended for use in an introductory data science class. 
 
@@ -119,6 +119,8 @@ This material can also be used by working professionals who want to learn the ba
     * Woes of interpreting regression coefficients
     
          * https://youtu.be/yzQHONabWhs?t=498
+
+
 
 
 
