@@ -43,7 +43,7 @@ This material can also be used by working professionals who want to learn the ba
     
     * http://scott.fortmann-roe.com/docs/BiasVariance.html
     
-    * VERY GOOD picture
+    * VERY GOOD picture explanation
     
         * https://github.com/neelsoumya/basic_statistics/blob/master/bias_variance.png
         
