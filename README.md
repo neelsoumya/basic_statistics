@@ -106,6 +106,8 @@ This is a repository for teaching the basics of statistics for data science and 
       
       * https://github.com/neelsoumya/basic_statistics/blob/master/800px-Sensitivity_and_specificity.svg.png
 
+      * https://www.analyticsvidhya.com/blog/2020/04/confusion-matrix-machine-learning/
+
 
 
 * Linear models and interaction effects (by ISLR authors Rob Tibshirani and Efron)
