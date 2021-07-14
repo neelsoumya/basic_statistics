@@ -99,9 +99,8 @@ This is a repository for teaching the basics of statistics for data science and 
    
    * https://developers.google.com/machine-learning/crash-course/classification/precision-and-recall
    
-   * VERY GOOD pictures of precision, recall, confusion matrix, false positive, true positive, sensitivity, specificity 
+   * VERY GOOD pictures of precision, recall, confusion matrix, false positive, true positive, sensitivity and specificity 
    
-      
       * https://github.com/neelsoumya/basic_statistics/blob/master/Screen%20Shot%202020-07-16%20at%2011.12.44%20AM.png
       
       * https://github.com/neelsoumya/basic_statistics/blob/master/800px-Sensitivity_and_specificity.svg.png
