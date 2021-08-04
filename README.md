@@ -79,6 +79,13 @@ This is a repository for teaching the basics of statistics for data science and 
          fm2  <- glm(y ~ w + x + z, data=d, family=binomial)
          confint(object = fm2, method = 'boot')
          
+         also in Python and R empirical 95% confidence interval     
+         lb = np.percentile(list_auc, 2.5)
+         ub = np.percentile(list_auc, 97.5)
+        
+         lb = quantile(list_auc, 0.025)
+         ub = quantile(list_auc, 0.975)
+         
          
    * meaning of confidence intervals
 
