@@ -1,6 +1,8 @@
 # basic_statistics
 
-This is a repository for teaching the basics of statistics for data science and machine learning. It is intended for use in an introductory data science class. This material can also be used by working professionals who want to learn the basics of data science, statistics and machine learning.
+This is a repository for teaching the basics of statistics for data science and machine learning. It is intended for use in an introductory data science class. 
+
+This material can also be used by working professionals who want to learn the basics of data science, statistics and machine learning.
 
 * Type 1 and Type 2 errors and p value
 
@@ -85,6 +87,7 @@ This is a repository for teaching the basics of statistics for data science and 
         
          lb = quantile(list_auc, 0.025)
          ub = quantile(list_auc, 0.975)
+         mean = mean(list_uac)
          
          
    * meaning of confidence intervals
