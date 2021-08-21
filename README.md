@@ -80,14 +80,14 @@ This material can also be used by working professionals who want to learn the ba
          do GLM on this new data frame
          fm2  <- glm(y ~ w + x + z, data=d, family=binomial)
          confint(object = fm2, method = 'boot')
-         
-         also in Python and R empirical 95% confidence interval     
-         lb = np.percentile(list_auc, 2.5)
-         ub = np.percentile(list_auc, 97.5)
         
          lb = quantile(list_auc, 0.025)
          ub = quantile(list_auc, 0.975)
          mean = mean(list_uac)
+         
+         also in Python and R empirical 95% confidence interval     
+         lb = np.percentile(list_auc, 2.5)
+         ub = np.percentile(list_auc, 97.5)
          
          
    * meaning of confidence intervals
