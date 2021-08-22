@@ -18,3 +18,10 @@
        
        * https://www.coursera.org/lecture/disease-genes/introduction-to-genome-wide-association-studies-historical-overview-iFQ1J
   
+  
+  
+* More practical topics
+
+   * caret in R
+
+   *  
