@@ -71,6 +71,10 @@ This material can also be used by working professionals who want to learn the ba
          qnorm(ci_alpha / 2)
          qnorm(1 - (ci_alpha/2))
          
+         95% of the probability mass is found in about 2 standard deviations of the mean (see video below)
+         
+         https://www.youtube.com/watch?v=hlM7zdf7zwU
+         
          boostrapped confidence intervals using confint(x, method = 'boot')
          
          d <- data.frame(w=rnorm(100),
