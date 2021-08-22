@@ -24,4 +24,4 @@
 
    * caret in R
 
-   *  
+   * https://github.com/neelsoumya/intro-machine-learning/blob/master/slides/caret/caret_example.R
