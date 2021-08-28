@@ -10,6 +10,8 @@ This material can also be used by working professionals or lay people who want t
     
 * Power and Type 2 error
 
+    * https://www.youtube.com/watch?v=6_Cuz0QqRWc
+
     * https://www.khanacademy.org/math/ap-statistics/tests-significance-ap
     
 * p value
