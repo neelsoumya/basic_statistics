@@ -136,3 +136,7 @@ This material can also be used by working professionals or lay people who want t
 
 
 
+if you like this, please cite the following:
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4743435.svg)](https://doi.org/10.5281/zenodo.4743435)
+
