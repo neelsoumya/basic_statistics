@@ -123,7 +123,9 @@ This material can also be used by working professionals or lay people who want t
 
       * https://www.analyticsvidhya.com/blog/2020/04/confusion-matrix-machine-learning/
 
+* Explanation of AUC (area under curve)
 
+      *    https://github.com/neelsoumya/basic_statistics/blob/master/auc_explanation.png
 
 * Linear models and interaction effects (by ISLR authors Rob Tibshirani and Efron)
 
