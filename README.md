@@ -136,4 +136,6 @@ This material can also be used by working professionals or lay people who want t
          * https://youtu.be/yzQHONabWhs?t=498
 
 
+* ANOVA
+     * https://cambiotraining.github.io/stats-mixed-effects-models/materials/06-significance-and-model-comparison.html
 
