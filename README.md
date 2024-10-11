@@ -138,4 +138,13 @@ This material can also be used by working professionals or lay people who want t
 
 * ANOVA
      * https://cambiotraining.github.io/stats-mixed-effects-models/materials/06-significance-and-model-comparison.html
+ 
+     * Code
+          * https://github.com/neelsoumya/basic_statistics/blob/master/anova_basic.R
+            
+          * https://github.com/neelsoumya/basic_statistics/blob/master/anova_politeness.R   
+
+* Mixed effects models
+     * https://github.com/neelsoumya/basic_statistics/blob/master/mixed_effects_basics.Rmd
+
 
