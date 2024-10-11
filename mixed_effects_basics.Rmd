@@ -1,0 +1,331 @@
+---
+title: "mixed_effects_basics"
+author: "Soumya Banerjee"
+date: "12 December 2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# R Markdown for a mixed effects model
+
+This is an R Markdown document for a mixed effects tutorial.
+This is adapted from the following sources
+
+http://www.bodowinter.com./tutorial/bw_LME_tutorial2.pdf
+
+http://www.bodowinter.com./tutorial/bw_LME_tutorial1.pdf
+
+
+# Loading data and libraries
+
+
+```{r, include=FALSE}
+
+library(lme4)
+library(sqldf)
+
+df_politeness = read.csv("~/anova_linear_mixed_effects_examples/politeness_data.csv")
+
+head(df_politeness)
+
+which(!complete.cases(df_politeness))
+
+```
+
+# Plots to visualize data
+
+```{r, echo=FALSE}
+
+boxplot(frequency ~ attitude*gender, data = df_politeness,
+        col=c("white","lightgray")
+        )
+
+plot(df_politeness$gender, df_politeness$frequency)
+
+```
+
+# Make a simple linear mixed effects model
+
+```{r, echo=FALSE}
+
+m_model_simple = lmer(frequency ~ attitude + (1|subject) + (1|scenario), data = df_politeness)
+summary(m_model_simple)
+
+```
+
+
+Let us focus on the output for the random effects first:
+Have a look at the column standard deviation. This is a measure of how much
+variability in the dependent measure there is due to scenarios and subjects (our
+two random effects). You can see that scenario (“item”) has much less variability
+than subject. Based on our boxplots from above, where we saw more idiosyncratic
+differences between subjects than between items, this is to be expected. Then, you
+see “Residual” which stands for the variability that’s not due to either scenario or
+subject. This is our $\epsilon$ again, the “random” deviations from the predicted values
+that are not due to subjects and items. Here, this reflects the fact that each and
+every utterance has some factors that affect pitch that are outside of the purview
+of our experiment.
+
+The fixed effects output mirrors the coefficient table that we considered in tutorial
+1 when we talked about the results of our linear model analysis.
+The coefficient “attitudepol” is the slope for the categorical effect of politeness.
+Minus 19.695 means that to go from “informal” to “polite”, you have to go down
+-19.695 Hz. In other words: pitch is lower in polite speech than in informal speech,
+by about 20 Hz. Then, there’s a standard error associated with this slope, and a tvalue,
+which is simply the estimate (20 Hz) divided by the standard error (check
+this by performing the calculation by hand).
+
+Now, let’s consider the intercept. In tutorial 1, we already talked about the fact
+that oftentimes, model intercepts are not particularly meaningful. But this
+intercept is especially weird. It’s 202.588 Hz ... where does that value come
+from?
+If you look back at the boxplot that we constructed earlier, you can see that the
+value 202.588 Hz seems to fall halfway between males and females (in the
+informal condition) – and this is indeed what this intercept represents. It’s the
+average of our data for the informal condition.
+As we didn’t inform our model that there’s two sexes in our dataset, the intercept
+is particularly off, in between the voice pitch of males and females. This is just
+like the classic example of a farm with a dozen hens and a dozen cows ... where
+the mean legs of all farm animals considered together is three, not a particularly
+informative representation of what’s going on at the farm.
+
+\newpage
+
+
+# Adding gender as an additional fixed effect.
+
+We now add “gender” as a fixed effect because the relationship
+between sex and pitch is systematic and predictable 
+(i.e., we expect females to have higher pitch). 
+This is different from the random effects subject and item,
+where the relationship between these and pitch is much more unpredictable and
+“random”. We’ll talk more about the distinction between fixed and random effects later.
+
+```{r, echo=FALSE}
+
+m_model_complex = lmer(frequency ~ attitude + gender + (1|subject) + (1|scenario),
+                       data=df_politeness)
+
+summary(m_model_complex)
+
+```
+
+
+Note that compared to our earlier model without the fixed effect gender, the
+variation that’s associated with the random effect “subject” dropped considerably.
+This is because the variation that’s due to gender was confounded with the
+variation that’s due to subject. The model didn’t know about males and females,
+and so its predictions were relatively more off, creating relatively larger residuals.
+Now that we have added the effect of gender, we have shifted a considerable
+amount of the variance that was previously in the random effects component
+(differences between male and female individuals) to the fixed effects component.
+
+We see that males and females differ by about 109 Hz. And the intercept is now
+much higher (256.846 Hz), as it now represents the female category (for the
+informal condition). The coefficient for the effect of attitude didn’t change much.
+
+
+```{r, echo=FALSE}
+
+cat("\n ************ \n")
+cat("Simple model without gender\n")
+summary(m_model_simple)
+
+cat("\n ************ \n")
+cat("Complex model with gender \n")
+summary(m_model_complex)
+
+```
+
+
+# Comparing two models
+
+Here, I focus on the Likelihood Ratio Test as a means to attain p-values.
+Likelihood is the probability of seeing the data you collected given your model.
+The logic of the likelihood ratio test is to compare the likelihood of two models
+with each other. First, the model without the factor that you’re interested in (the
+null model), then the model with the factor that you’re interested in. Maybe an
+analogy helps you to wrap your head around this: Say, you’re a hiker, and you
+carry a bunch of different things with you (e.g., a gallon of water, a flashlight). To
+know whether each item affects your hiking speed, you need to get rid of it. So,
+you get rid of the flashlight and run without it. Your hiking speed is not affected
+much. Then, you get rid of the gallon of water, and you realize that your hiking
+speed is affected a lot. You would conclude that carrying a gallon of water with
+you significantly affects your hiking speed whereas carrying a flashlight does not.
+Expressed in formula, you would want to compare the following two “models”
+(think “hikes”) with each other:
+mdl1 = hiking speed ~ gallon of water + flashlight
+mdl2 = hiking speed ~ flashlight
+If there is a significant difference between “mdl2” and “mdl1”, then you know
+that the gallon of water matters.
+
+In both cases, we compared a full model (with the fixed effects in question)
+against a reduced model without the effects in question. In each case, we conclude
+that a fixed effect is significant if the difference between the likelihood of these
+two models is significant.
+
+Note one additional technical detail. I just added the argument REML=FALSE.
+Don’t worry about it too much – but in case you’re interested, this changes some
+internal stuff (in particular, the likelihood estimator), and it is necessary to do this
+when you compare models using the likelihood ratio test (Pinheiro & Bates, 2000;
+Bolker et al., 2009).
+
+
+```{r, echo=FALSE}
+
+m_model_simple_LRT = lmer(frequency ~ attitude + (1|subject) + (1|scenario),
+                            data=df_politeness,
+                            REML = FALSE)
+
+summary(m_model_simple_LRT)
+
+
+m_model_complex_LRT = lmer(frequency ~ attitude + gender + (1|subject) + (1|scenario),
+                            data=df_politeness,
+                            REML = FALSE)
+
+summary(m_model_complex_LRT)
+
+
+```
+
+
+Now you have two models to compare with each other – one with the effect in
+question, one without the effect in question. We perform the likelihood ratio test
+using the anova() function:
+
+You’re being reminded of the formula of the two models that you’re comparing.
+Then, you find a Chi-Square value, the associated degrees of freedom and the pvalue.
+You would report this result the following way:
+
+ politeness affected pitch ($\chi$ 2 (1)=11.94, p=0.00055), lowering it by
+about 19.7 Hz +/- 5.5 (standard errors)
+
+
+```{r, echo=FALSE}
+
+anova(m_model_simple_LRT, m_model_complex_LRT)
+
+```
+
+
+
+# Interaction effects
+
+What happens if you have an interaction? We didn’t talk much about interactions yet, but say, you predicted
+“attitude” to have an effect on pitch that is somehow modulated through “gender”.
+For example, it could be that speaking politely versus informally has the opposite
+effect for men and women. Or it could be that women show a difference and men
+don’t (or vice versa). If you have such an inter-dependence between two factors
+(called an interaction), you can test it the following way:
+
+full model: frequency ~ attitude*gender
+reduced model: frequency ~ attitude + gender
+
+In R, interactions between two factors are specified with a “*” rather than a “+”.
+
+
+```{r, echo=FALSE}
+
+m_model_interaction = lmer(frequency ~ attitude + gender + attitude*gender + (1|subject),
+                           data = df_politeness)
+
+summary(m_model_interaction)
+
+```
+
+
+# Random slopes model
+
+You see that each scenario and each subject is assigned a different intercept.
+That’s what we would expect, given that we’ve told the model with “(1|subject)”
+and “(1|scenario)” to take by-subject and by-item variability into account.
+
+
+CONCEPT 1: intercept is the random noise part
+
+But not also that the fixed effects (attitude and gender) are all the same for all
+subjects and items. Our model is what is called a random intercept model. In this
+model, we account for baseline-differences in pitch, but we assume that whatever
+the effect of politeness is, it’s going to be the same for all subjects and items.
+
+
+CONCEPT 2: slope is the fixed effects part
+
+
+```{r, echo=FALSE}
+
+coef(m_model_complex)
+
+```
+
+
+## Introduce by subject variability
+
+
+```{r, echo=FALSE}
+
+m_model_random_slope = lmer(frequency ~ attitude + gender + (1+attitude|subject) + (1+attitude|scenario),
+                            data = df_politeness)
+
+coef(m_model_random_slope)
+
+```
+
+
+# Checks of model assumptions
+
+## Plot residuals and check for homoskedasticity
+
+```{r, echo=FALSE}
+
+plot(fitted(m_model_complex), residuals(m_model_complex))
+
+```
+
+
+## Normality of residuals
+
+
+```{r, echo=FALSE}
+
+hist(residuals(m_model_complex))
+
+qqnorm(residuals(m_model_complex))
+
+```
+
+## Absence of influential data points
+
+```{r, echo=FALSE}
+
+#dfbeta(model = m_model_complex)
+#dfbetas(model = m_model_simple)
+
+```
+
+
+## Independence
+
+# Supplementary Material
+
+## Another connection with ANOVA
+
+NOTE: this does not account for repeated measures from the same subject
+
+
+```{r , echo=FALSE}
+
+oneway.test(formula = frequency ~ gender, data = df_politeness)
+
+```
+
+# References
+
+[1] Winter, B. (2013). Linear models and linear mixed effects models in R with linguistic applications. arXiv:1308.5499. [http://arxiv.org/pdf/1308.5499.pdf]
+
+[2] http://www.bodowinter.com/tutorials.html, URL accessed December 2018
+
