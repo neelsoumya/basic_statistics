@@ -7,6 +7,10 @@ This material can also be used by working professionals or lay people who want t
 * Type 1 errors, Type 2 errors and p value
 
     * https://youtu.be/Hdbbx7DIweQ
+ 
+    * Shiny app to explain p-value using coin toss
+ 
+    * https://sb2333medschl.shinyapps.io/pvalue_explanation_shiny/
     
 * Power and Type 2 error
 
