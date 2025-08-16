@@ -10,6 +10,9 @@ This material can also be used by working professionals or lay people who want t
  
     * Shiny app to explain p-value using coin toss
  
+    * `p-value = probability of observing the data, if the null hypothesis is true`
+
+ 
     * https://sb2333medschl.shinyapps.io/pvalue_explanation_shiny/
     
 * Power and Type 2 error
